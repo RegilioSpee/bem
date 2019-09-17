@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="author" content="Regilio Spee" />
+    <title>Regilio Spee | image viewer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="viewer">
+        <!--Figure 1-->
+        <figure class="item__1">
+          <img src="images/small/logoma.jpg" alt=" " class="logoimg" />
+        </figure>
+
+        <!--Figure 2-->
+        <figure class="item__2">
+          <img src="arrow/logoma.png" id="display" alt="" class="large_img" />
+        </figure>
+
+        <!--Figure 3-->
+        <figure class="item__3">
+          <div class="up">
+            <img
+              src="arrows/arrow-up.png"
+              alt="arrow up"
+              class="viewercontrol"
+            />
+          </div>
+          <div class="left">
+            <img
+              src="arrows/arrow-left.png"
+              onclick="cycle(true)"
+              alt="arrow left"
+              class="viewercontrol"
+            />
+          </div>
+          <div class="right">
+            <img
+              src="arrows/arrow-right.png"
+              onclick="cycle(false)"
+              alt="arrow right"
+              class="viewercontrol"
+            />
+          </div>
+          <div class="down">
+            <img
+              src="arrows/arrow-down.png"
+              alt="arrow down"
+              class="viewer__control"
+            />
+          </div>
+        </figure>
+        <!--Figure 4-->
+        <figure class="item__4">
+          <div id="small">
+            <div id="tumbs"></div>
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
