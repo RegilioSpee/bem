@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bem</title>
+    <meta name="author" content="Regilio Spee" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script>
+      function openSlideMenu() {
+        document.getElementById("menu").style.width = "250px";
+        document.getElementById("content").style.marginLeft = "250px";
+      }
+
+      function closeSlideMenu() {
+        document.getElementById("menu").style.width = "0";
+        document.getElementById("content").style.marginLeft = "0";
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <h1 class="nav__brand">
+        <a class="nav__brand__a" href="#"
+          >Regilio<span class="nav__brand__span">Spee</span></a
+        >
+      </h1>
+
+      <div class="nav__search-box">
+        <input
+          class="nav__search-txt"
+          type="text"
+          placeholder="Type to search"
+        />
+        <a class="nav__search-btn" href="#"> <i class="fas fa-search"></i></a>
+      </div>
+
+      <div class="nav__profile-pic">
+        <img class="nav__prof-pic" src="images/logo-blauw.png" alt="logo-blauw" />
+      </div>
+
+      <div class="nav__popup-nav">
+        <div class="nav__slide">
+          <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+
+        <div id="menu" class="nav__popup">
+          <a href="#" class="nav__close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i>
+          </a>
+          <a class="nav__popup__item" href="#">Home</a>
+          <a class="nav__popup__item" href="#">Information</a>
+          <a class="nav__popup__item" href="#">Video</a>
+          <a class="nav__popup__item" href="#">Searchpage</a>
+          <a class="nav__popup__item" href="#">SignUp/Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--
+nav left screen side bar -->
+
+    <div class="nav-sidebar">
+      <ul class="nav-sidebar__ul">
+        <li class="nav-sidebar__item">
+          <a class="nav-sidebar__list" href="#"
+            ><i class="fas fa-home"></i
+            ><span class="nav-sidebar__span">Home</span></a
+          >
+        </li>
+        <li class="nav-sidebar__item">
+          <a class="nav-sidebar__list" href="#"
+            ><i class="fas fa-info-circle"></i
+            ><span class="nav-sidebar__span">Information</span></a
+          >
+            </li>
+    </div>
+
+    <!--
+    end nav left screen side bar -->
+    <div class="home-content">
+      <div class="bhd">
+        <h2>Renew Studios</h2>
+        <img
+          class="home-content__img"
+          src="images/logo-blauw.png"
+          alt="Logo blauw"
+        />
+        <p>
+          Renew Studios is een bedrijf dat net gestart is wat bedrijven een
+          upgrade geeft aan hun marketing.
+        </p>
+      </div>
+      <div class="InfograpicShow">
+        <h2>Over mij</h2>
+        <img
+          class="home-content__img"
+          src="images/overmij.png"
+          alt="Over mij"
+        />
+        <p>
+          Dit gaat over Regilio Spee
+        </p>
+      </div>
+      <div class="Trap Nation">
+        <h2>Developer</h2>
+        <img class="home-content__img" src="images/dev.png" alt="Developer" />
+        <p>
+          Developertekst
+        </p>
+      </div>
+      <div class="LvlCapGaming">
+        <h2>Contact</h2>
+        <img
+          class="home-content__img"
+          src="images/contact.png"
+          alt="Contact"
+        />
+        <p>
+          Contactpagina
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__icons">
+        <ul class="footer__icon__item">
+          <li class="footer__icon__list">
+            <a class="footer__icon__a" href="#" target="blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="footer__icon__list">
+            <a class="footer__icon__a" href="#" target="blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="footer__icon__list">
+            <a class="footer__icon__a" href="#" target="blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li class="footer__icon__list">
+            <a class="footer__icon__a" href="#" target="blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__menu__items">
+          <li class="footer__menu__list">
+            <a class="footer__menu__a" href="#">Home</a>
+          </li>
+          <li class="footer__menu__list">
+            <a class="footer__menu__a" href="#">Information</a>
+          </li>
+          <li class="footer__menu__list">
+            <a class="footer__menu__a" href="#">Video</a>
+          </li>
+          <li class="footer__menu__list">
+            <a class="footer__menu__a" href="#">Searchpage</a>
+          </li>
+          <li class="footer__menu__list">
+            <a class="footer__menu__a" href="#">Signin/up</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottem">
+        <p class="footer__bottem">
+          Design by: <a class="footer__bottem__a" href="#">Regilio Spee</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
